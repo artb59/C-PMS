@@ -1,0 +1,29 @@
+
+
+
+#include <iostream>
+#include <string>
+#include <map>
+
+using namespace std;
+
+class Property {
+private:
+  string streetAddress;
+  string city;
+  int units;
+  double rentPrice;
+
+public:
+  // constructor
+  Property(string address, string city, int units, double rentPrice) : streetAddress(address), city(city), units(units), rentPrice(rentPrice) {}
+
+  // getters
+  string getStreetAddress() const {return streetAddress; } 
+  string getCity() const {return city; }
+  int getUnits() const {return units; }
+  double getRentPrice() const {return rentPrice; }
+
+  // setters
+  void setStreetAddress(string address) {streetAddress = address;}
+  void setCity(string city) {this->city = city;
